@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
   useEffect(() => {
     const getPosts = async () => {
-      const res = await fetch("http://localhost:8000/posts")
+      const res = await fetch("http://localhost:8000/posts/")
       const data = await res.json()
       console.log("data", data)
     }
